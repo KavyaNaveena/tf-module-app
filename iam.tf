@@ -1,4 +1,4 @@
-resource "aws_iam_policy" "policy" {
+resource "aws_iam_policy" "main" {
   name        = "${var.component}-${var.env}"
   path        = "/"
   description = "${var.component}-${var.env}"
