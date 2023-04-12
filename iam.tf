@@ -30,7 +30,7 @@ resource "aws_iam_policy" "main" {
 }
 
 resource "aws_iam_role" "main" {
-  name = "test_role"
+  name = "${var.component}-${var.env}"
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
